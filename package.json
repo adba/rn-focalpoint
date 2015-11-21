@@ -1,0 +1,41 @@
+{
+  "name": "rn-focalpoint",
+  "version": "1.0.0",
+  "description": "Manage User Input Flow In React Native",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcurtis/rn-focalpoint.git"
+  },
+  "keywords": [
+    "react-native",
+    "input",
+    "flow",
+    "focus",
+    "ios",
+    "android"
+  ],
+  "author": "Alex Curtis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexcurtis/rn-focalpoint/issues"
+  },
+  "homepage": "https://github.com/alexcurtis/rn-focalpoint#readme",
+  "peerDependencies": {
+      "react": ">=0.14",
+      "react-native": ">=0.13"
+  },
+  "dependencies": {
+    "react-utils": "github:alexcurtis/react-utils"
+  },
+  "devDependencies": {
+    "react": "^0.14.0",
+    "react-native": "^0.13.2",
+    "babel-eslint": "^4.1.3",
+    "eslint": "^1.7.3",
+    "eslint-plugin-react": "^3.6.3"
+  }
+}
