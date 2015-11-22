@@ -13,11 +13,12 @@ class FocalPoint extends React.Component {
         this.context.addFocalPoint(this, this.props.index);
     }
     componentWillUnmount(){
-        this.context.removeFocalPoint(this.props.index);
+        this.context.removeFocalPoint(this);
     }
     getOnSubmitEditingHandler(child){
+        const self = this;
         return () => {
-            this.context.focusOnPoint(child, this.props.index);
+            this.context.focusOnPoint(self);
             const onSubmitEditing = child.props.onSubmitEditing;
             if(onSubmitEditing){ onSubmitEditing(); }
         };
@@ -67,7 +68,7 @@ FocalPoint.contextTypes = {
 };
 
 FocalPoint.propTypes = {
-    index: React.PropTypes.number.isRequired,
+    index: React.PropTypes.number,
     isEnd: React.PropTypes.bool,
     children: function(props, name, component){
         const prop = props[name];

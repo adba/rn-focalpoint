@@ -18,12 +18,16 @@ class FocalPoints extends React.Component {
         };
     }
     addFocalPoint(point, index){
+        if(index === undefined){ index = this.fpoints.length; }
         this.fpoints[index] = point;
     }
-    removeFocalPoint(index){
+    removeFocalPoint(point){
+        const index = this.fpoints.indexOf(point);
+        if(index === -1){ return; }
         delete this.fpoints[index];
     }
-    focusOnPoint(point, index){
+    focusOnPoint(current){
+        const index = this.fpoints.indexOf(current);
         const fpoints = this.fpoints;
         const next = index + 1;
         if(next > fpoints.length - 1 || !fpoints[next]){ return; }

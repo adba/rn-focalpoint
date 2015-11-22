@@ -32,7 +32,7 @@ class FocalPointExample extends React.Component {
                 <View style={style.form}>
                     <FocalPoints onDone={() => this.onDone()} style={vgroup.form}>
                         <View style={[vgroup.top, vgroup.seperator]}>
-                            <FocalPoint index={0}>
+                            <FocalPoint>
                                 <TextInput
                                     style={[input.text, vgroup.input]}
                                     placeholder="username"
@@ -42,7 +42,7 @@ class FocalPointExample extends React.Component {
                             </FocalPoint>
                         </View>
                         <View style={vgroup.seperator}>
-                            <FocalPoint index={1}>
+                            <FocalPoint>
                                 <TextInput
                                     style={[input.text, vgroup.input]}
                                     placeholder="password"
@@ -52,7 +52,7 @@ class FocalPointExample extends React.Component {
                                 />
                             </FocalPoint>
                         </View>
-                        <FocalPoint index={2} isEnd={true}>
+                        <FocalPoint isEnd={true}>
                             <TextInput
                                 style={[input.text, vgroup.input]}
                                 placeholder="access code"
