@@ -41,7 +41,7 @@ class FocalPoints extends React.Component {
     }
     render(){
         return (
-            <View>
+            <View style={this.props.style}>
                 {this.props.children}
             </View>
         );
@@ -56,6 +56,7 @@ FocalPoints.childContextTypes = {
 };
 
 FocalPoints.propTypes = {
+    style: React.propTypes.object,
     children: React.PropTypes.any,
     onDone: React.PropTypes.func,
     blurOnSubmit: React.PropTypes.bool,
