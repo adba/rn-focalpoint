@@ -1,7 +1,7 @@
 {
   "name": "rn-focalpoint",
   "version": "1.0.0",
-  "description": "Create high-level focus chains in React Native without the boilerplate.",
+  "description": "Create a high-level focus chain in React Native without the boilerplate.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js,.jsx src example/*.js"

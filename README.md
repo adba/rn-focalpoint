@@ -1,6 +1,6 @@
 # rn-focalpoint
 
-Create high-level focus chains in React Native without the boilerplate.
+Create a high-level focus chain in React Native without the boilerplate.
 
 ![example](http://i.imgur.com/fIRLVv7.gif)
 
