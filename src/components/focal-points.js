@@ -56,7 +56,7 @@ FocalPoints.childContextTypes = {
 };
 
 FocalPoints.propTypes = {
-    style: React.PropTypes.object,
+    style: View.propTypes.style,
     children: React.PropTypes.any,
     onDone: React.PropTypes.func,
     blurOnSubmit: React.PropTypes.bool,
