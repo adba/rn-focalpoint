@@ -37,8 +37,9 @@ class FocalPoint extends React.Component {
         return isEnd ? options.kbDoneKey : options.kbNextKey;
     }
     getBlurOnSubmit(child, options){
-        const override = child.props.blurOnSubmit;
-        return override ? override : options.blurOnSubmit;
+        //Ensure It Is Enabled On The Last Point Of The Chain
+        if(this.props.isEnd){ return true; }
+        return options.blurOnSubmit;
     }
     render(){
         const options = this.context.getFocalPointOptions();
