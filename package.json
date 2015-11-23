@@ -1,6 +1,6 @@
 {
   "name": "rn-focalpoint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a high-level focus chain in React Native without the boilerplate.",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
       "react-native": ">=0.13"
   },
   "dependencies": {
-    "react-utils": "github:alexcurtis/react-utils"
+    "react-utils": "alexcurtis/react-utils"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",
