@@ -9,7 +9,7 @@ Source available in the `/example` directory.
 ### Install
 
 ```
-npm install alexcurtis/rn-focalpoint --save
+npm install rn-focalpoint --save
 ```
 
 ### Quick Start
