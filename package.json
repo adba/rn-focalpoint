@@ -24,9 +24,6 @@
     "url": "https://github.com/alexcurtis/rn-focalpoint/issues"
   },
   "homepage": "https://github.com/alexcurtis/rn-focalpoint#readme",
-  "peerDependencies": {
-      "react-native": ">=0.13"
-  },
   "dependencies": {
     "react-utils": "alexcurtis/react-utils"
   },
